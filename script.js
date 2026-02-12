@@ -71,3 +71,12 @@ navbarToggle.addEventListener("click", () => {
   navbarToggle.classList.toggle("active");
   navbar.classList.toggle("active");
 });
+
+const submitBtn = document.querySelector(".submit-btn");
+
+submitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  alert("Your message has been sent successfully!");
+  // clear form fields
+  document.querySelector("form").reset();
+});
